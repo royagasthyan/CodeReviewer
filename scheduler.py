@@ -67,7 +67,7 @@ print "********* Doing project checkout **********"
 if(os.path.isdir("./" + project)):
     execute_cmd("cd " + project + "; git pull")
 else:
-    execute_cmd("git clone " + project_url)
+    execute_cmd("git clone " + project_url + " " + project)
 print "*** Done *******"
 print " "
 
